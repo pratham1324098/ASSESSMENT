@@ -1,3 +1,5 @@
+const testObject = { name: 'Bruce Wayne', age: 36, location: 'Gotham' };
+
 function invert(obj) {
     const invertedObj = {};
     for (const key in obj) {
@@ -7,3 +9,4 @@ function invert(obj) {
     }
     return invertedObj;
   }
+  console.log(invert(testObject));

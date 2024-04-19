@@ -1,3 +1,5 @@
+const testObject = { name: 'Bruce Wayne', age: 36, location: 'Gotham' };
+
 function pairs(obj) {
     const keyValuePairs = [];
     for (const key in obj) {
@@ -7,3 +9,4 @@ function pairs(obj) {
     }
     return keyValuePairs;
   }
+  console.log(pairs(testObject));

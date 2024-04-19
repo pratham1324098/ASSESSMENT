@@ -1,3 +1,4 @@
+const testObject = { name: 'Bruce Wayne', age: 36, location: 'Gotham' };
 function defaults(obj, defaultProps) {
     for (const key in defaultProps) {
       if (!obj.hasOwnProperty(key) || obj[key] === undefined) {
@@ -6,3 +7,4 @@ function defaults(obj, defaultProps) {
     }
     return obj;
   }
+  console.log(defaults(testObject));
